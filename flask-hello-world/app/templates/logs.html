@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>System Logs</title>
+    <style>
+        body {
+            background: #111;
+            color: #00ff41;
+            font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+        }
+        .logs-container {
+            width: 1500px;
+            margin: 60px auto;
+            padding: 30px 30px 20px 30px;
+            background: rgba(20, 20, 20, 0.98);
+            border-radius: 10px;
+            box-shadow: 0 0 40px #00ff41, 0 0 10px #222 inset;
+        }
+        h2 {
+            color: #00ff41;
+            text-shadow: 0 0 8px #00ff41;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .terminal-logs {
+            background: #181818;
+            color: #00ff41;
+            border-radius: 6px;
+            padding: 18px;
+            margin-top: 25px;
+            font-size: 1.05em;
+            min-height: 200px;
+            box-shadow: 0 0 10px #00ff41 inset;
+            font-family: inherit;
+            white-space: pre-wrap;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        .back-btn {
+            margin-top: 20px;
+            padding: 10px 24px;
+            background: #111;
+            color: #00ff41;
+            border: 2px solid #00ff41;
+            border-radius: 4px;
+            font-size: 1em;
+            font-family: inherit;
+            cursor: pointer;
+            box-shadow: 0 0 10px #00ff41 inset;
+            transition: background 0.2s, color 0.2s;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .back-btn:hover {
+            background: #00ff41;
+            color: #111;
+        }
+    </style>
+</head>
+<body>
+    <div class="logs-container">
+        <h2>System Logs</h2>
+        <div class="terminal-logs">
+            {% if logs and logs|length > 0 %}
+                {% for log in logs %}
+                    {{ log }}
+                {% endfor %}
+            {% else %}
+                No logs available.
+            {% endif %}
+        </div>
+        <a href="{{ url_for('dashboard') }}">
+            <button class="back-btn" type="button">Back to Dashboard</button>
+        </a>
+    </div>
+</body>
+</html>

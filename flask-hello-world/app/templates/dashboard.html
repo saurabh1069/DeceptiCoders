@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cybersecurity Dashboard</title>
+    <style>
+        body {
+            background: #111;
+            color: #00ff41;
+            font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+        }
+        .dashboard-container {
+            width: 1500px;
+            margin: 60px auto;
+            padding: 30px 30px 20px 30px;
+            background: rgba(20, 20, 20, 0.98);
+            border-radius: 10px;
+            box-shadow: 0 0 40px #00ff41, 0 0 10px #222 inset;
+            text-align: center;
+        }
+        h2 {
+            color: #00ff41;
+            text-shadow: 0 0 8px #00ff41;
+            margin-bottom: 10px;
+        }
+        .logout-btn, .logs-btn, .AI-btn {
+            margin: 20px 10px 0 10px;
+            padding: 12px 28px;
+            background: #111;
+            color: #00ff41;
+            border: 2px solid #00ff41;
+            border-radius: 4px;
+            font-size: 1.1em;
+            font-family: inherit;
+            cursor: pointer;
+            box-shadow: 0 0 10px #00ff41 inset;
+            transition: background 0.2s, color 0.2s;
+        }
+        .logout-btn:hover, .logs-btn:hover, .AI-btn:hover {
+            background: #00ff41;
+            color: #111;
+        }
+        .terminal {
+            background: #181818;
+            color: #00ff41;
+            border-radius: 6px;
+            padding: 18px;
+            margin-top: 25px;
+            font-size: 1.05em;
+            min-height: 250px;
+            box-shadow: 0 0 10px #00ff41 inset;
+            text-align: left;
+        }
+        .prompt {
+            color: #39ff14;
+        }
+        .ascii-art {
+            font-size: 1.2em;
+            color: #00ff41;
+            text-shadow: 0 0 8px #00ff41;
+            margin-bottom: 20px;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="ascii-art">
+{{
+"""\
+
+  __ \                            |   _)   ___|             |                  
+  |   |   _ \   __|   _ \  __ \   __|  |  |       _ \    _` |   _ \   __|  __| 
+  |   |   __/  (      __/  |   |  |    |  |      (   |  (   |   __/  |   \__ \ 
+ ____/  \___| \___| \___|  .__/  \__| _| \____| \___/  \__,_| \___| _|   ____/ 
+                          _|                                                   
+                                                                         
+"""
+}}
+        </div>
+        <h2>Welcome, {{ user }}!</h2>
+        <div class="terminal">
+            <span class="prompt">$</span> You are logged in.<br>
+            <span class="prompt">$</span> System secure. Monitoring activity...
+        </div>
+        <form action="{{ url_for('logout') }}" method="post" style="display:inline;">
+            <button class="logout-btn" type="submit">Logout</button>
+        </form>
+        <a href="{{ url_for('show_logs') }}">
+            <button class="logs-btn" type="button">View Logs</button>
+        </a>
+        <a href="{{ url_for('AI_Assistant') }}">
+            <button class="AI-btn" type="button">AI Analysis</button>
+        </a>
+    </div>
