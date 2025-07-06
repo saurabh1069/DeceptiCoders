@@ -245,3 +245,43 @@
 2025-07-06 12:13:44,696 INFO: 127.0.0.1 - - [06/Jul/2025 12:13:44] "[32mPOST /login HTTP/1.1[0m" 302 -
 2025-07-06 12:13:44,721 INFO: 127.0.0.1 - - [06/Jul/2025 12:13:44] "GET /dashboard HTTP/1.1" 200 -
 2025-07-06 12:16:27,504 INFO: 127.0.0.1 - - [06/Jul/2025 12:16:27] "GET /AI_Assistant HTTP/1.1" 200 -
+2025-07-06 22:44:51,495 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-06 22:44:51,496 INFO: [33mPress CTRL+C to quit[0m
+2025-07-06 22:44:51,498 INFO:  * Restarting with stat
+2025-07-06 22:44:51,829 WARNING:  * Debugger is active!
+2025-07-06 22:44:51,831 INFO:  * Debugger PIN: 721-008-442
+2025-07-06 22:44:58,622 INFO: 127.0.0.1 - - [06/Jul/2025 22:44:58] "[35m[1mGET /show_logs HTTP/1.1[0m" 500 -
+2025-07-06 22:44:58,767 INFO: 127.0.0.1 - - [06/Jul/2025 22:44:58] "[36mGET /show_logs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-06 22:44:58,771 INFO: 127.0.0.1 - - [06/Jul/2025 22:44:58] "[36mGET /show_logs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-06 22:44:58,817 INFO: 127.0.0.1 - - [06/Jul/2025 22:44:58] "GET /show_logs?__debugger__=yes&cmd=resource&f=console.png&s=5AbVFHjGAFDMDhLqRMmQ HTTP/1.1" 200 -
+2025-07-06 22:44:58,988 INFO: 127.0.0.1 - - [06/Jul/2025 22:44:58] "[36mGET /show_logs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-06 22:45:04,050 INFO: 127.0.0.1 - - [06/Jul/2025 22:45:04] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-07-06 22:45:04,908 INFO: 127.0.0.1 - - [06/Jul/2025 22:45:04] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-07-06 22:45:04,934 INFO: 127.0.0.1 - - [06/Jul/2025 22:45:04] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-06 22:45:04,940 INFO: 127.0.0.1 - - [06/Jul/2025 22:45:04] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-06 22:45:04,976 INFO: 127.0.0.1 - - [06/Jul/2025 22:45:04] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=5AbVFHjGAFDMDhLqRMmQ HTTP/1.1" 200 -
+2025-07-06 22:45:05,016 INFO: 127.0.0.1 - - [06/Jul/2025 22:45:05] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-06 22:45:07,952 INFO: 127.0.0.1 - - [06/Jul/2025 22:45:07] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-07-06 22:45:07,973 INFO: 127.0.0.1 - - [06/Jul/2025 22:45:07] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-06 22:45:07,979 INFO: 127.0.0.1 - - [06/Jul/2025 22:45:07] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-06 22:45:08,022 INFO: 127.0.0.1 - - [06/Jul/2025 22:45:08] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png&s=5AbVFHjGAFDMDhLqRMmQ HTTP/1.1[0m" 304 -
+2025-07-06 22:45:39,898 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-06 22:45:39,899 INFO: [33mPress CTRL+C to quit[0m
+2025-07-06 22:45:39,900 INFO:  * Restarting with stat
+2025-07-06 22:45:40,234 WARNING:  * Debugger is active!
+2025-07-06 22:45:40,236 INFO:  * Debugger PIN: 721-008-442
+2025-07-06 22:45:42,360 INFO: 127.0.0.1 - - [06/Jul/2025 22:45:42] "GET /login HTTP/1.1" 200 -
+2025-07-06 22:45:50,450 INFO: User 'admin' logged in successfully.
+2025-07-06 22:45:50,451 INFO: 127.0.0.1 - - [06/Jul/2025 22:45:50] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-06 22:45:50,471 INFO: 127.0.0.1 - - [06/Jul/2025 22:45:50] "GET /dashboard HTTP/1.1" 200 -
+2025-07-06 22:45:55,338 INFO: User 'admin' logged out.
+2025-07-06 22:45:55,338 INFO: 127.0.0.1 - - [06/Jul/2025 22:45:55] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-07-06 22:45:55,343 INFO: 127.0.0.1 - - [06/Jul/2025 22:45:55] "GET /login HTTP/1.1" 200 -
+2025-07-06 22:46:01,414 INFO: User 'admin' logged in successfully.
+2025-07-06 22:46:01,414 INFO: 127.0.0.1 - - [06/Jul/2025 22:46:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-06 22:46:01,438 INFO: 127.0.0.1 - - [06/Jul/2025 22:46:01] "GET /dashboard HTTP/1.1" 200 -
+2025-07-06 22:46:09,400 INFO: 127.0.0.1 - - [06/Jul/2025 22:46:09] "GET /show_logs HTTP/1.1" 200 -
+2025-07-06 22:46:13,935 INFO: 127.0.0.1 - - [06/Jul/2025 22:46:13] "GET /dashboard HTTP/1.1" 200 -
+2025-07-06 22:46:15,205 INFO: 127.0.0.1 - - [06/Jul/2025 22:46:15] "GET /AI_Assistant HTTP/1.1" 200 -
