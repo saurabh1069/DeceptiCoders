@@ -500,3 +500,17 @@
 2025-07-07 00:53:58,906 INFO: 127.0.0.1 - - [07/Jul/2025 00:53:58] "[36mGET /view-logs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
 2025-07-07 00:53:58,925 INFO: 127.0.0.1 - - [07/Jul/2025 00:53:58] "GET /view-logs?__debugger__=yes&cmd=resource&f=console.png&s=AjW9UQYTh1LD78PfyUGG HTTP/1.1" 200 -
 2025-07-07 00:53:58,963 INFO: 127.0.0.1 - - [07/Jul/2025 00:53:58] "[36mGET /view-logs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-07 09:26:54,911 INFO: User 'admin' logged out.
+2025-07-07 09:26:54,913 INFO: 127.0.0.1 - - [07/Jul/2025 09:26:54] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-07-07 09:26:54,928 INFO: 127.0.0.1 - - [07/Jul/2025 09:26:54] "GET /login HTTP/1.1" 200 -
+2025-07-07 09:27:00,720 INFO: User 'admin' logged in successfully.
+2025-07-07 09:27:00,721 INFO: 127.0.0.1 - - [07/Jul/2025 09:27:00] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-07 09:27:00,754 INFO: 127.0.0.1 - - [07/Jul/2025 09:27:00] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 09:27:04,987 INFO: 127.0.0.1 - - [07/Jul/2025 09:27:04] "GET /AI_Assistant HTTP/1.1" 200 -
+2025-07-07 09:27:11,845 INFO: 127.0.0.1 - - [07/Jul/2025 09:27:11] "[35m[1mGET /view-logs HTTP/1.1[0m" 500 -
+2025-07-07 09:27:11,907 INFO: 127.0.0.1 - - [07/Jul/2025 09:27:11] "[36mGET /view-logs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-07 09:27:11,917 INFO: 127.0.0.1 - - [07/Jul/2025 09:27:11] "[36mGET /view-logs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-07 09:27:11,976 INFO: 127.0.0.1 - - [07/Jul/2025 09:27:11] "[36mGET /view-logs?__debugger__=yes&cmd=resource&f=console.png&s=AjW9UQYTh1LD78PfyUGG HTTP/1.1[0m" 304 -
+2025-07-07 09:27:16,152 INFO: 127.0.0.1 - - [07/Jul/2025 09:27:16] "GET /show_logs HTTP/1.1" 200 -
+2025-07-07 09:28:32,706 INFO:  * Detected change in 'C:\\Users\\Amruta\\OneDrive\\Documents\\GitHub\\DeceptiCoders\\flask-hello-world\\app\\config.py', reloading
+2025-07-07 09:28:33,312 INFO:  * Restarting with stat
