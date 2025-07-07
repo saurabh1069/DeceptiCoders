@@ -3,65 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <title>Cybersecurity Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
-            background: #111;
-            color: #00ff41;
-            font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
+            min-height: 100vh;
             margin: 0;
-            padding: 0;
+            background: linear-gradient(135deg, #4f8cff 0%, #314e89 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
         }
         .dashboard-container {
-            width: 1500px;
-            margin: 60px auto;
-            padding: 30px 30px 20px 30px;
-            background: rgba(20, 20, 20, 0.98);
-            border-radius: 10px;
-            box-shadow: 0 0 40px #00ff41, 0 0 10px #222 inset;
+            width: 1000px;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(60,80,180,0.18);
+            padding: 36px 30px 30px 30px;
             text-align: center;
+            animation: fadein 0.9s;
         }
-        h2 {
-            color: #00ff41;
-            text-shadow: 0 0 8px #00ff41;
-            margin-bottom: 10px;
-        }
-        .logout-btn, .logs-btn, .AI-btn {
-            margin: 20px 10px 0 10px;
-            padding: 12px 28px;
-            background: #111;
-            color: #00ff41;
-            border: 2px solid #00ff41;
-            border-radius: 4px;
-            font-size: 1.1em;
-            font-family: inherit;
-            cursor: pointer;
-            box-shadow: 0 0 10px #00ff41 inset;
-            transition: background 0.2s, color 0.2s;
-        }
-        .logout-btn:hover, .logs-btn:hover, .AI-btn:hover {
-            background: #00ff41;
-            color: #111;
-        }
-        .terminal {
-            background: #181818;
-            color: #00ff41;
-            border-radius: 6px;
-            padding: 18px;
-            margin-top: 25px;
-            font-size: 1.05em;
-            min-height: 250px;
-            box-shadow: 0 0 10px #00ff41 inset;
-            text-align: left;
-        }
-        .prompt {
-            color: #39ff14;
+        @keyframes fadein {
+            from { opacity: 0; transform: translateY(-20px);}
+            to { opacity: 1; transform: translateY(0);}
         }
         .ascii-art {
-            font-size: 1.2em;
-            color: #00ff41;
-            text-shadow: 0 0 8px #00ff41;
-            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: #314e89;
+            margin-bottom: 18px;
             white-space: pre;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 0 2px 16px #dde7ff;
+        }
+        h2 {
+            color: #314e89;
+            margin-bottom: 18px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .terminal {
+            background: #232946;
+            color: #e0e0e0;
+            border-radius: 8px;
+            padding: 16px 18px;
+            margin-bottom: 25px;
+            font-size: 1em;
+            min-height: 90px;
+            text-align: left;
+            box-shadow: 0 2px 12px rgba(49,78,137,0.08);
+        }
+        .prompt {
+            color: #7cfc00;
+            font-weight: bold;
+        }
+        .dashboard-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 18px;
+        }
+        .dashboard-btns form,
+        .dashboard-btns a {
+            width: 100%;
+        }
+        .dashboard-btn {
+            width: 100%;
+            padding: 13px 0;
+            background: linear-gradient(90deg, #4f8cff 60%, #314e89 100%);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.08em;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(79,140,255,0.10);
+            transition: background 0.2s, box-shadow 0.2s;
+            margin-bottom: 0;
+        }
+        .dashboard-btn:hover {
+            background: linear-gradient(90deg, #314e89 70%, #4f8cff 100%);
+            box-shadow: 0 4px 18px rgba(49,78,137,0.10);
+        }
+        @media (max-width: 480px) {
+            .dashboard-container { width: 98%; padding: 18px 4px 10px 4px; }
+            .ascii-art { font-size: 0.95em; }
         }
     </style>
 </head>
@@ -76,22 +101,22 @@
   |   |   __/  (      __/  |   |  |    |  |      (   |  (   |   __/  |   \__ \ 
  ____/  \___| \___| \___|  .__/  \__| _| \____| \___/  \__,_| \___| _|   ____/ 
                           _|                                                   
-                                                                         
+
 """
 }}
         </div>
         <h2>Welcome, {{ user }}!</h2>
-        <div class="terminal">
-            <span class="prompt">$</span> You are logged in.<br>
-            <span class="prompt">$</span> System secure. Monitoring activity...
+        <div class="dashboard-btns">
+            <form action="{{ url_for('logout') }}" method="post" style="margin:0;">
+                <button class="dashboard-btn" type="submit">Logout</button>
+            </form>
+            <a href="{{ url_for('show_logs') }}">
+                <button class="dashboard-btn" type="button">View Logs</button>
+            </a>
+            <a href="{{ url_for('AI_Assistant') }}">
+                <button class="dashboard-btn" type="button">AI Analysis</button>
+            </a>
         </div>
-        <form action="{{ url_for('logout') }}" method="post" style="display:inline;">
-            <button class="logout-btn" type="submit">Logout</button>
-        </form>
-        <a href="{{ url_for('show_logs') }}">
-            <button class="logs-btn" type="button">View Logs</button>
-        </a>
-        <a href="{{ url_for('AI_Assistant') }}">
-            <button class="AI-btn" type="button">AI Analysis</button>
-        </a>
     </div>
+</body>
+</html>

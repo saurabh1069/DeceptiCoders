@@ -3,61 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>System Logs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
-            background: #111;
-            color: #00ff41;
-            font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
+            min-height: 100vh;
             margin: 0;
-            padding: 0;
+            background: linear-gradient(135deg, #4f8cff 0%, #314e89 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
         }
         .logs-container {
-            width: 1500px;
-            margin: 60px auto;
-            padding: 30px 30px 20px 30px;
-            background: rgba(20, 20, 20, 0.98);
-            border-radius: 10px;
-            box-shadow: 0 0 40px #00ff41, 0 0 10px #222 inset;
+            width: 600px;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(60,80,180,0.18);
+            padding: 36px 30px 30px 30px;
+            margin: 38px auto;
+            animation: fadein 0.9s;
+        }
+        @keyframes fadein {
+            from { opacity: 0; transform: translateY(-20px);}
+            to { opacity: 1; transform: translateY(0);}
         }
         h2 {
-            color: #00ff41;
-            text-shadow: 0 0 8px #00ff41;
-            margin-bottom: 10px;
+            color: #314e89;
+            margin-bottom: 20px;
             text-align: center;
+            font-weight: 700;
+            letter-spacing: 0.5px;
         }
         .terminal-logs {
-            background: #181818;
-            color: #00ff41;
-            border-radius: 6px;
-            padding: 18px;
-            margin-top: 25px;
-            font-size: 1.05em;
-            min-height: 200px;
-            box-shadow: 0 0 10px #00ff41 inset;
-            font-family: inherit;
+            background: #232946;
+            color: #e0e0e0;
+            border-radius: 8px;
+            padding: 18px 16px;
+            margin-bottom: 25px;
+            font-size: 1em;
+            min-height: 130px;
+            max-height: 380px;
+            box-shadow: 0 2px 12px rgba(49,78,137,0.08);
+            font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
             white-space: pre-wrap;
-            max-height: 600px;
             overflow-y: auto;
         }
         .back-btn {
-            margin-top: 20px;
-            padding: 10px 24px;
-            background: #111;
-            color: #00ff41;
-            border: 2px solid #00ff41;
-            border-radius: 4px;
-            font-size: 1em;
-            font-family: inherit;
+            width: 100%;
+            padding: 13px 0;
+            background: linear-gradient(90deg, #4f8cff 60%, #314e89 100%);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.08em;
+            font-weight: 600;
             cursor: pointer;
-            box-shadow: 0 0 10px #00ff41 inset;
-            transition: background 0.2s, color 0.2s;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+            box-shadow: 0 2px 6px rgba(79,140,255,0.10);
+            transition: background 0.2s, box-shadow 0.2s;
+            margin-top: 0;
         }
         .back-btn:hover {
-            background: #00ff41;
-            color: #111;
+            background: linear-gradient(90deg, #314e89 70%, #4f8cff 100%);
+            box-shadow: 0 4px 18px rgba(49,78,137,0.10);
+        }
+        @media (max-width: 540px) {
+            .logs-container { width: 98%; padding: 16px 4px 10px 4px; }
+            h2 { font-size: 1.1em;}
         }
     </style>
 </head>

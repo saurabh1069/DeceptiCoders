@@ -285,3 +285,218 @@
 2025-07-06 22:46:09,400 INFO: 127.0.0.1 - - [06/Jul/2025 22:46:09] "GET /show_logs HTTP/1.1" 200 -
 2025-07-06 22:46:13,935 INFO: 127.0.0.1 - - [06/Jul/2025 22:46:13] "GET /dashboard HTTP/1.1" 200 -
 2025-07-06 22:46:15,205 INFO: 127.0.0.1 - - [06/Jul/2025 22:46:15] "GET /AI_Assistant HTTP/1.1" 200 -
+2025-07-06 23:17:58,720 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-06 23:17:58,721 INFO: [33mPress CTRL+C to quit[0m
+2025-07-06 23:17:58,722 INFO:  * Restarting with stat
+2025-07-06 23:17:59,029 WARNING:  * Debugger is active!
+2025-07-06 23:17:59,031 INFO:  * Debugger PIN: 721-008-442
+2025-07-06 23:18:04,399 INFO: 127.0.0.1 - - [06/Jul/2025 23:18:04] "GET /dashboard HTTP/1.1" 200 -
+2025-07-06 23:18:06,297 INFO: User 'admin' logged out.
+2025-07-06 23:18:06,298 INFO: 127.0.0.1 - - [06/Jul/2025 23:18:06] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-07-06 23:18:06,307 INFO: 127.0.0.1 - - [06/Jul/2025 23:18:06] "GET /login HTTP/1.1" 200 -
+2025-07-06 23:18:11,400 INFO: User 'admin' logged in successfully.
+2025-07-06 23:18:11,400 INFO: 127.0.0.1 - - [06/Jul/2025 23:18:11] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-06 23:18:11,432 INFO: 127.0.0.1 - - [06/Jul/2025 23:18:11] "GET /dashboard HTTP/1.1" 200 -
+2025-07-06 23:18:21,113 INFO: 127.0.0.1 - - [06/Jul/2025 23:18:21] "GET /show_logs HTTP/1.1" 200 -
+2025-07-06 23:18:31,099 INFO: 127.0.0.1 - - [06/Jul/2025 23:18:31] "GET /dashboard HTTP/1.1" 200 -
+2025-07-06 23:18:34,523 INFO: User 'admin' logged out.
+2025-07-06 23:18:34,523 INFO: 127.0.0.1 - - [06/Jul/2025 23:18:34] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-07-06 23:18:34,529 INFO: 127.0.0.1 - - [06/Jul/2025 23:18:34] "GET /login HTTP/1.1" 200 -
+2025-07-06 23:20:47,448 INFO:  * Detected change in 'C:\\Users\\Amruta\\OneDrive\\Documents\\GitHub\\DeceptiCoders\\flask-hello-world\\app\\routes.py', reloading
+2025-07-06 23:20:47,534 INFO:  * Restarting with stat
+2025-07-06 23:22:01,207 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-06 23:22:01,207 INFO: [33mPress CTRL+C to quit[0m
+2025-07-06 23:22:01,209 INFO:  * Restarting with stat
+2025-07-06 23:22:01,750 WARNING:  * Debugger is active!
+2025-07-06 23:22:01,752 INFO:  * Debugger PIN: 721-008-442
+2025-07-06 23:22:09,765 INFO: 127.0.0.1 - - [06/Jul/2025 23:22:09] "GET /login HTTP/1.1" 200 -
+2025-07-06 23:22:16,238 INFO: User 'admin' logged in successfully.
+2025-07-06 23:22:16,239 INFO: 127.0.0.1 - - [06/Jul/2025 23:22:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-06 23:22:16,273 INFO: 127.0.0.1 - - [06/Jul/2025 23:22:16] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2025-07-06 23:22:16,358 INFO: 127.0.0.1 - - [06/Jul/2025 23:22:16] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-06 23:22:16,377 INFO: 127.0.0.1 - - [06/Jul/2025 23:22:16] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-06 23:22:16,410 INFO: 127.0.0.1 - - [06/Jul/2025 23:22:16] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=amI07ihRyRtbPXsKu6jd HTTP/1.1" 200 -
+2025-07-06 23:22:16,447 INFO: 127.0.0.1 - - [06/Jul/2025 23:22:16] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-06 23:22:53,240 INFO:  * Detected change in 'C:\\Users\\Amruta\\OneDrive\\Documents\\GitHub\\DeceptiCoders\\flask-hello-world\\app\\routes.py', reloading
+2025-07-06 23:22:53,558 INFO:  * Restarting with stat
+2025-07-06 23:22:54,176 WARNING:  * Debugger is active!
+2025-07-06 23:22:54,178 INFO:  * Debugger PIN: 721-008-442
+2025-07-06 23:29:10,771 INFO: 127.0.0.1 - - [06/Jul/2025 23:29:10] "GET /dashboard HTTP/1.1" 200 -
+2025-07-06 23:29:21,152 INFO: 127.0.0.1 - - [06/Jul/2025 23:29:21] "[33mGET /view_logs HTTP/1.1[0m" 404 -
+2025-07-06 23:29:28,011 INFO:  * Detected change in 'C:\\Users\\Amruta\\OneDrive\\Documents\\GitHub\\DeceptiCoders\\flask-hello-world\\app\\routes.py', reloading
+2025-07-06 23:29:28,227 INFO:  * Restarting with stat
+2025-07-06 23:30:18,467 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-06 23:30:18,468 INFO: [33mPress CTRL+C to quit[0m
+2025-07-06 23:30:18,470 INFO:  * Restarting with stat
+2025-07-06 23:30:19,043 WARNING:  * Debugger is active!
+2025-07-06 23:30:19,045 INFO:  * Debugger PIN: 721-008-442
+2025-07-06 23:30:23,303 INFO: 127.0.0.1 - - [06/Jul/2025 23:30:23] "[33mGET /view_logs HTTP/1.1[0m" 404 -
+2025-07-06 23:30:26,892 INFO: 127.0.0.1 - - [06/Jul/2025 23:30:26] "GET /login HTTP/1.1" 200 -
+2025-07-06 23:30:32,805 INFO: User 'admin' logged in successfully.
+2025-07-06 23:30:32,805 INFO: 127.0.0.1 - - [06/Jul/2025 23:30:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-06 23:30:32,825 INFO: 127.0.0.1 - - [06/Jul/2025 23:30:32] "GET /dashboard HTTP/1.1" 200 -
+2025-07-06 23:30:36,010 INFO: User 'admin' logged out.
+2025-07-06 23:30:36,011 INFO: 127.0.0.1 - - [06/Jul/2025 23:30:36] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-07-06 23:30:36,016 INFO: 127.0.0.1 - - [06/Jul/2025 23:30:36] "GET /login HTTP/1.1" 200 -
+2025-07-06 23:30:40,251 INFO: User 'admin' logged in successfully.
+2025-07-06 23:30:40,252 INFO: 127.0.0.1 - - [06/Jul/2025 23:30:40] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-06 23:30:40,281 INFO: 127.0.0.1 - - [06/Jul/2025 23:30:40] "GET /dashboard HTTP/1.1" 200 -
+2025-07-06 23:30:44,245 INFO: 127.0.0.1 - - [06/Jul/2025 23:30:44] "GET /show_logs HTTP/1.1" 200 -
+2025-07-06 23:30:53,688 INFO: 127.0.0.1 - - [06/Jul/2025 23:30:53] "GET /dashboard HTTP/1.1" 200 -
+2025-07-06 23:30:56,304 INFO: 127.0.0.1 - - [06/Jul/2025 23:30:56] "GET /AI_Assistant HTTP/1.1" 200 -
+2025-07-06 23:31:02,048 INFO: 127.0.0.1 - - [06/Jul/2025 23:31:02] "GET /AI_Assistant HTTP/1.1" 200 -
+2025-07-06 23:31:18,386 INFO: 127.0.0.1 - - [06/Jul/2025 23:31:18] "[33mGET /View_logs HTTP/1.1[0m" 404 -
+2025-07-06 23:31:55,430 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-06 23:31:55,431 INFO: [33mPress CTRL+C to quit[0m
+2025-07-06 23:31:55,432 INFO:  * Restarting with stat
+2025-07-06 23:31:56,013 WARNING:  * Debugger is active!
+2025-07-06 23:31:56,015 INFO:  * Debugger PIN: 721-008-442
+2025-07-06 23:32:04,507 INFO: 127.0.0.1 - - [06/Jul/2025 23:32:04] "[33mGET /view_logs HTTP/1.1[0m" 404 -
+2025-07-06 23:32:06,129 INFO: 127.0.0.1 - - [06/Jul/2025 23:32:06] "[33mGET /view_logs HTTP/1.1[0m" 404 -
+2025-07-06 23:33:40,029 INFO: 127.0.0.1 - - [06/Jul/2025 23:33:40] "GET /view-logs HTTP/1.1" 200 -
+2025-07-06 23:35:11,250 INFO:  * Detected change in 'C:\\Users\\Amruta\\OneDrive\\Documents\\GitHub\\DeceptiCoders\\flask-hello-world\\app\\routes.py', reloading
+2025-07-06 23:35:11,775 INFO:  * Restarting with stat
+2025-07-06 23:35:12,416 WARNING:  * Debugger is active!
+2025-07-06 23:35:12,418 INFO:  * Debugger PIN: 721-008-442
+2025-07-06 23:35:22,466 INFO: 127.0.0.1 - - [06/Jul/2025 23:35:22] "[35m[1mGET /view-logs HTTP/1.1[0m" 500 -
+2025-07-06 23:35:22,533 INFO: 127.0.0.1 - - [06/Jul/2025 23:35:22] "GET /view-logs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-06 23:35:22,536 INFO: 127.0.0.1 - - [06/Jul/2025 23:35:22] "GET /view-logs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-06 23:35:22,559 INFO: 127.0.0.1 - - [06/Jul/2025 23:35:22] "GET /view-logs?__debugger__=yes&cmd=resource&f=console.png&s=kj9h8Z4Dg5qL18jL8L4I HTTP/1.1" 200 -
+2025-07-06 23:35:22,579 INFO: 127.0.0.1 - - [06/Jul/2025 23:35:22] "GET /view-logs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-06 23:37:25,342 INFO: 127.0.0.1 - - [06/Jul/2025 23:37:25] "[35m[1mGET /view-logs HTTP/1.1[0m" 500 -
+2025-07-06 23:37:25,370 INFO: 127.0.0.1 - - [06/Jul/2025 23:37:25] "[36mGET /view-logs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-06 23:37:25,372 INFO: 127.0.0.1 - - [06/Jul/2025 23:37:25] "[36mGET /view-logs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-06 23:37:25,413 INFO: 127.0.0.1 - - [06/Jul/2025 23:37:25] "[36mGET /view-logs?__debugger__=yes&cmd=resource&f=console.png&s=kj9h8Z4Dg5qL18jL8L4I HTTP/1.1[0m" 304 -
+2025-07-06 23:37:40,923 INFO:  * Detected change in 'C:\\Users\\Amruta\\OneDrive\\Documents\\GitHub\\DeceptiCoders\\flask-hello-world\\app\\routes.py', reloading
+2025-07-06 23:37:41,500 INFO:  * Restarting with stat
+2025-07-06 23:37:42,121 WARNING:  * Debugger is active!
+2025-07-06 23:37:42,123 INFO:  * Debugger PIN: 721-008-442
+2025-07-06 23:37:56,458 INFO:  * Detected change in 'C:\\Users\\Amruta\\OneDrive\\Documents\\GitHub\\DeceptiCoders\\flask-hello-world\\app\\routes.py', reloading
+2025-07-06 23:37:56,929 INFO:  * Restarting with stat
+2025-07-06 23:37:57,542 WARNING:  * Debugger is active!
+2025-07-06 23:37:57,545 INFO:  * Debugger PIN: 721-008-442
+2025-07-06 23:38:11,330 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-06 23:38:11,330 INFO: [33mPress CTRL+C to quit[0m
+2025-07-06 23:38:11,332 INFO:  * Restarting with stat
+2025-07-06 23:38:11,830 WARNING:  * Debugger is active!
+2025-07-06 23:38:11,831 INFO:  * Debugger PIN: 721-008-442
+2025-07-06 23:38:17,064 INFO: 127.0.0.1 - - [06/Jul/2025 23:38:17] "GET /view-logs HTTP/1.1" 200 -
+2025-07-06 23:40:08,062 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-06 23:40:08,063 INFO: [33mPress CTRL+C to quit[0m
+2025-07-06 23:40:08,064 INFO:  * Restarting with stat
+2025-07-06 23:40:08,647 WARNING:  * Debugger is active!
+2025-07-06 23:40:08,649 INFO:  * Debugger PIN: 721-008-442
+2025-07-06 23:40:09,967 INFO: 127.0.0.1 - - [06/Jul/2025 23:40:09] "GET /dashboard HTTP/1.1" 200 -
+2025-07-06 23:40:28,490 INFO: 127.0.0.1 - - [06/Jul/2025 23:40:28] "GET /show_logs HTTP/1.1" 200 -
+2025-07-06 23:42:43,502 INFO: 127.0.0.1 - - [06/Jul/2025 23:42:43] "GET /dashboard HTTP/1.1" 200 -
+2025-07-06 23:42:55,469 INFO: 127.0.0.1 - - [06/Jul/2025 23:42:55] "GET /login HTTP/1.1" 200 -
+2025-07-06 23:43:01,218 INFO: User 'admin' logged in successfully.
+2025-07-06 23:43:01,218 INFO: 127.0.0.1 - - [06/Jul/2025 23:43:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-06 23:43:01,241 INFO: 127.0.0.1 - - [06/Jul/2025 23:43:01] "GET /dashboard HTTP/1.1" 200 -
+2025-07-06 23:44:26,292 INFO: 127.0.0.1 - - [06/Jul/2025 23:44:26] "GET /dashboard HTTP/1.1" 200 -
+2025-07-06 23:44:28,372 INFO: 127.0.0.1 - - [06/Jul/2025 23:44:28] "GET /dashboard HTTP/1.1" 200 -
+2025-07-06 23:58:44,371 INFO: 127.0.0.1 - - [06/Jul/2025 23:58:44] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:01:39,354 INFO: 127.0.0.1 - - [07/Jul/2025 00:01:39] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:02:21,571 INFO: 127.0.0.1 - - [07/Jul/2025 00:02:21] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:04:07,873 INFO: 127.0.0.1 - - [07/Jul/2025 00:04:07] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:04:53,146 INFO: 127.0.0.1 - - [07/Jul/2025 00:04:53] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:05:23,166 INFO: 127.0.0.1 - - [07/Jul/2025 00:05:23] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:06:13,899 INFO: 127.0.0.1 - - [07/Jul/2025 00:06:13] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:06:47,932 INFO: 127.0.0.1 - - [07/Jul/2025 00:06:47] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:07:17,819 INFO: 127.0.0.1 - - [07/Jul/2025 00:07:17] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:07:18,859 INFO: 127.0.0.1 - - [07/Jul/2025 00:07:18] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:07:41,627 INFO: 127.0.0.1 - - [07/Jul/2025 00:07:41] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:08:16,188 INFO: 127.0.0.1 - - [07/Jul/2025 00:08:16] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:08:43,791 INFO: 127.0.0.1 - - [07/Jul/2025 00:08:43] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:09:41,586 INFO: 127.0.0.1 - - [07/Jul/2025 00:09:41] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:10:23,378 INFO: 127.0.0.1 - - [07/Jul/2025 00:10:23] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:10:24,423 INFO: 127.0.0.1 - - [07/Jul/2025 00:10:24] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:10:25,025 INFO: 127.0.0.1 - - [07/Jul/2025 00:10:25] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:10:33,857 INFO: 127.0.0.1 - - [07/Jul/2025 00:10:33] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:10:34,952 INFO: 127.0.0.1 - - [07/Jul/2025 00:10:34] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:10:37,404 INFO: User 'admin' logged out.
+2025-07-07 00:10:37,405 INFO: 127.0.0.1 - - [07/Jul/2025 00:10:37] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-07-07 00:10:37,418 INFO: 127.0.0.1 - - [07/Jul/2025 00:10:37] "GET /login HTTP/1.1" 200 -
+2025-07-07 00:10:43,901 INFO: User 'admin' logged in successfully.
+2025-07-07 00:10:43,901 INFO: 127.0.0.1 - - [07/Jul/2025 00:10:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-07 00:10:43,932 INFO: 127.0.0.1 - - [07/Jul/2025 00:10:43] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:10:48,042 INFO: 127.0.0.1 - - [07/Jul/2025 00:10:48] "GET /show_logs HTTP/1.1" 200 -
+2025-07-07 00:10:53,336 INFO: 127.0.0.1 - - [07/Jul/2025 00:10:53] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:10:54,226 INFO: 127.0.0.1 - - [07/Jul/2025 00:10:54] "GET /AI_Assistant HTTP/1.1" 200 -
+2025-07-07 00:14:33,633 INFO: 127.0.0.1 - - [07/Jul/2025 00:14:33] "GET /login HTTP/1.1" 200 -
+2025-07-07 00:14:45,259 INFO: User 'admin' logged in successfully.
+2025-07-07 00:14:45,260 INFO: 127.0.0.1 - - [07/Jul/2025 00:14:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-07 00:14:45,305 INFO: 127.0.0.1 - - [07/Jul/2025 00:14:45] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:16:58,380 INFO: User 'admin' logged in successfully.
+2025-07-07 00:16:58,381 INFO: 127.0.0.1 - - [07/Jul/2025 00:16:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-07 00:16:58,464 INFO: 127.0.0.1 - - [07/Jul/2025 00:16:58] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:17:24,822 INFO: 127.0.0.1 - - [07/Jul/2025 00:17:24] "GET /show_logs HTTP/1.1" 200 -
+2025-07-07 00:17:34,524 INFO: 127.0.0.1 - - [07/Jul/2025 00:17:34] "GET /AI_Assistant HTTP/1.1" 200 -
+2025-07-07 00:18:35,110 INFO: 127.0.0.1 - - [07/Jul/2025 00:18:35] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:19:15,245 INFO: User 'admin' logged in successfully.
+2025-07-07 00:19:15,246 INFO: 127.0.0.1 - - [07/Jul/2025 00:19:15] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-07 00:19:15,292 INFO: 127.0.0.1 - - [07/Jul/2025 00:19:15] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:20:12,562 INFO: 127.0.0.1 - - [07/Jul/2025 00:20:12] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:21:39,617 INFO: 127.0.0.1 - - [07/Jul/2025 00:21:39] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:22:14,061 INFO: 127.0.0.1 - - [07/Jul/2025 00:22:14] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:22:30,531 INFO: 127.0.0.1 - - [07/Jul/2025 00:22:30] "GET /login HTTP/1.1" 200 -
+2025-07-07 00:22:37,592 INFO: User 'admin' logged in successfully.
+2025-07-07 00:22:37,593 INFO: 127.0.0.1 - - [07/Jul/2025 00:22:37] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-07 00:22:37,641 INFO: 127.0.0.1 - - [07/Jul/2025 00:22:37] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:24:10,919 INFO: 127.0.0.1 - - [07/Jul/2025 00:24:10] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:24:12,842 INFO: 127.0.0.1 - - [07/Jul/2025 00:24:12] "GET /show_logs HTTP/1.1" 200 -
+2025-07-07 00:24:34,781 INFO: 127.0.0.1 - - [07/Jul/2025 00:24:34] "GET /show_logs HTTP/1.1" 200 -
+2025-07-07 00:24:53,450 INFO: 127.0.0.1 - - [07/Jul/2025 00:24:53] "GET /show_logs HTTP/1.1" 200 -
+2025-07-07 00:25:12,227 INFO: 127.0.0.1 - - [07/Jul/2025 00:25:12] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:25:18,344 INFO: 127.0.0.1 - - [07/Jul/2025 00:25:18] "GET /show_logs HTTP/1.1" 200 -
+2025-07-07 00:26:45,587 INFO: 127.0.0.1 - - [07/Jul/2025 00:26:45] "GET /show_logs HTTP/1.1" 200 -
+2025-07-07 00:26:52,638 INFO: 127.0.0.1 - - [07/Jul/2025 00:26:52] "GET /view-logs HTTP/1.1" 200 -
+2025-07-07 00:29:00,552 INFO: 127.0.0.1 - - [07/Jul/2025 00:29:00] "GET /view-logs HTTP/1.1" 200 -
+2025-07-07 00:29:05,549 INFO: 127.0.0.1 - - [07/Jul/2025 00:29:05] "GET /show_logs HTTP/1.1" 200 -
+2025-07-07 00:29:31,821 INFO: 127.0.0.1 - - [07/Jul/2025 00:29:31] "GET /show_logs HTTP/1.1" 200 -
+2025-07-07 00:30:53,077 INFO: 127.0.0.1 - - [07/Jul/2025 00:30:53] "GET /show_logs HTTP/1.1" 200 -
+2025-07-07 00:31:48,687 INFO: 127.0.0.1 - - [07/Jul/2025 00:31:48] "GET /show_logs HTTP/1.1" 200 -
+2025-07-07 00:32:15,290 INFO: 127.0.0.1 - - [07/Jul/2025 00:32:15] "GET /show_logs HTTP/1.1" 200 -
+2025-07-07 00:32:39,238 INFO: 127.0.0.1 - - [07/Jul/2025 00:32:39] "GET /show_logs HTTP/1.1" 200 -
+2025-07-07 00:32:51,925 INFO: 127.0.0.1 - - [07/Jul/2025 00:32:51] "GET /show_logs HTTP/1.1" 200 -
+2025-07-07 00:33:17,260 INFO: 127.0.0.1 - - [07/Jul/2025 00:33:17] "GET /login HTTP/1.1" 200 -
+2025-07-07 00:33:27,538 INFO: User 'admin' logged in successfully.
+2025-07-07 00:33:27,539 INFO: 127.0.0.1 - - [07/Jul/2025 00:33:27] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-07 00:33:27,575 INFO: 127.0.0.1 - - [07/Jul/2025 00:33:27] "GET /dashboard HTTP/1.1" 200 -
+2025-07-07 00:36:38,559 INFO: 127.0.0.1 - - [07/Jul/2025 00:36:38] "GET /view-logs HTTP/1.1" 200 -
+2025-07-07 00:39:43,702 INFO: 127.0.0.1 - - [07/Jul/2025 00:39:43] "GET /view-logs HTTP/1.1" 200 -
+2025-07-07 00:41:08,271 INFO: 127.0.0.1 - - [07/Jul/2025 00:41:08] "[35m[1mGET /view-logs HTTP/1.1[0m" 500 -
+2025-07-07 00:41:08,416 INFO: 127.0.0.1 - - [07/Jul/2025 00:41:08] "[36mGET /view-logs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-07 00:41:08,438 INFO: 127.0.0.1 - - [07/Jul/2025 00:41:08] "[36mGET /view-logs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-07 00:41:08,472 INFO: 127.0.0.1 - - [07/Jul/2025 00:41:08] "GET /view-logs?__debugger__=yes&cmd=resource&f=console.png&s=JPuUa4W1RNYeKmYN2DRx HTTP/1.1" 200 -
+2025-07-07 00:41:08,521 INFO: 127.0.0.1 - - [07/Jul/2025 00:41:08] "[36mGET /view-logs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-07 00:47:41,958 INFO: 127.0.0.1 - - [07/Jul/2025 00:47:41] "[35m[1mGET /view-logs HTTP/1.1[0m" 500 -
+2025-07-07 00:47:41,993 INFO: 127.0.0.1 - - [07/Jul/2025 00:47:41] "[36mGET /view-logs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-07 00:47:41,998 INFO: 127.0.0.1 - - [07/Jul/2025 00:47:41] "[36mGET /view-logs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-07 00:47:42,041 INFO: 127.0.0.1 - - [07/Jul/2025 00:47:42] "[36mGET /view-logs?__debugger__=yes&cmd=resource&f=console.png&s=JPuUa4W1RNYeKmYN2DRx HTTP/1.1[0m" 304 -
+2025-07-07 00:51:12,354 INFO:  * Detected change in 'C:\\Users\\Amruta\\OneDrive\\Documents\\GitHub\\DeceptiCoders\\flask-hello-world\\app\\routes.py', reloading
+2025-07-07 00:51:12,915 INFO:  * Restarting with stat
+2025-07-07 00:51:13,794 WARNING:  * Debugger is active!
+2025-07-07 00:51:13,797 INFO:  * Debugger PIN: 721-008-442
+2025-07-07 00:51:24,227 INFO:  * Detected change in 'C:\\Users\\Amruta\\OneDrive\\Documents\\GitHub\\DeceptiCoders\\flask-hello-world\\app\\routes.py', reloading
+2025-07-07 00:51:24,733 INFO:  * Restarting with stat
+2025-07-07 00:51:26,133 WARNING:  * Debugger is active!
+2025-07-07 00:51:26,135 INFO:  * Debugger PIN: 721-008-442
+2025-07-07 00:52:42,177 INFO: 127.0.0.1 - - [07/Jul/2025 00:52:42] "GET /view-logs HTTP/1.1" 200 -
+2025-07-07 00:53:54,124 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-07 00:53:54,124 INFO: [33mPress CTRL+C to quit[0m
+2025-07-07 00:53:54,127 INFO:  * Restarting with stat
+2025-07-07 00:53:55,575 WARNING:  * Debugger is active!
+2025-07-07 00:53:55,582 INFO:  * Debugger PIN: 721-008-442
+2025-07-07 00:53:58,810 INFO: 127.0.0.1 - - [07/Jul/2025 00:53:58] "[35m[1mGET /view-logs HTTP/1.1[0m" 500 -
+2025-07-07 00:53:58,904 INFO: 127.0.0.1 - - [07/Jul/2025 00:53:58] "[36mGET /view-logs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-07 00:53:58,906 INFO: 127.0.0.1 - - [07/Jul/2025 00:53:58] "[36mGET /view-logs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-07 00:53:58,925 INFO: 127.0.0.1 - - [07/Jul/2025 00:53:58] "GET /view-logs?__debugger__=yes&cmd=resource&f=console.png&s=AjW9UQYTh1LD78PfyUGG HTTP/1.1" 200 -
+2025-07-07 00:53:58,963 INFO: 127.0.0.1 - - [07/Jul/2025 00:53:58] "[36mGET /view-logs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -

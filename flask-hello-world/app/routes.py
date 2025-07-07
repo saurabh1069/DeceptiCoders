@@ -1,6 +1,10 @@
 from flask import render_template, request, redirect, url_for, flash, session
+from database.db_connector import get_db
+from .config import MONGO_URI
 
 import logging
+
+db = get_db(MONGO_URI)
 
 def add_log(message):
     logging.info(message)
@@ -39,6 +43,11 @@ def setup_routes(app):
     @app.route('/AI_Assistant', methods=['GET'])
     def AI_Assistant():
         return render_template('AI_Assistant.html')
+    
+    @app.route('/view-logs')
+    def view_logs():
+        logs = db['Logs'].find().sort("timestamp", -1)  # Fetch logs, newest first
+        return render_template('view_logs.html', logs=logs)
 
     @app.route('/logout', methods=['POST'])
     def logout():

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decoy Logs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #4f8cff 0%, #314e89 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .logs-container {
+            width: 540px;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(60,80,180,0.18);
+            padding: 36px 30px 30px 30px;
+            margin: 38px auto;
+            animation: fadein 0.9s;
+        }
+        @keyframes fadein {
+            from { opacity: 0; transform: translateY(-20px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        h1 {
+            color: #314e89;
+            text-align: center;
+            margin-bottom: 26px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .chart-container {
+            width: 320px;
+            margin: 0 auto 30px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 8px 0 4px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f7faff;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 8px;
+            box-shadow: 0 2px 8px rgba(49,78,137,0.06);
+        }
+        th, td {
+            padding: 13px 12px;
+            border-bottom: 1px solid #e8e9ed;
+        }
+        th {
+            background-color: #314e89;
+            color: #fff;
+            font-weight: 600;
+            text-align: left;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        tr:hover {
+            background-color: #eaf2fb;
+        }
+        .timestamp {
+            font-size: 0.95em;
+            color: #6c757d;
+        }
+        .log-type {
+            font-weight: bold;
+            color: #3867d6;
+        }
+        .log-source {
+            color: #1e90ff;
+        }
+        .back-btn {
+            width: 100%;
+            padding: 13px 0;
+            background: linear-gradient(90deg, #4f8cff 60%, #314e89 100%);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.08em;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(79,140,255,0.10);
+            transition: background 0.2s, box-shadow 0.2s;
+            margin-top: 18px;
+        }
+        .back-btn:hover {
+            background: linear-gradient(90deg, #314e89 70%, #4f8cff 100%);
+            box-shadow: 0 4px 18px rgba(49,78,137,0.10);
+        }
+        @media (max-width: 600px) {
+            .logs-container { width: 99%; padding: 16px 4px 10px 4px; }
+            h1 { font-size: 1.1em; }
+            th, td { font-size: 0.96em; padding: 8px 5px; }
+            .chart-container { width: 100%; }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="logs-container">
+        <h1>📝 Decoy Logs</h1>
+
+        <div class="chart-container">
+            <canvas id="typePieChart"></canvas>
+        </div>
+
+        <table>
+            <tr>
+                <th>Timestamp</th>
+                <th>Type</th>
+                <th>Source</th>
+                <th>Message</th>
+            </tr>
+            {% for log in logs %}
+            <tr>
+                <td class="timestamp">{{ log.timestamp }}</td>
+                <td class="log-type">{{ log.type }}</td>
+                <td class="log-source">{{ log.source }}</td>
+                <td>{{ log.message }}</td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="4" style="text-align:center; color:#888;">No logs found.</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="{{ url_for('dashboard') }}">
+            <button class="back-btn" type="button">Back to Dashboard</button>
+        </a>
+    </div>
+    <script>
+        // Pass logs list as JSON to JS
+        const logs = {{ logs|tojson }};
+        const typeCounts = {};
+        logs.forEach(log => {
+            const type = log.type;
+            if (typeCounts[type]) {
+                typeCounts[type]++;
+            } else {
+                typeCounts[type] = 1;
+            }
+        });
+        const labels = Object.keys(typeCounts);
+        const data = Object.values(typeCounts);
+
+        // Colors for pie chart slices
+        const colors = [
+            "#3867d6", "#1e90ff", "#f7b731", "#eb3b5a", "#20bf6b",
+            "#8854d0", "#fd9644", "#a55eea", "#4b6584", "#f1c40f"
+        ];
+
+        // Render Pie Chart if there's data
+        if(labels.length > 0) {
+            new Chart(document.getElementById('typePieChart'), {
+                type: 'pie',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: data,
+                        backgroundColor: colors,
+                        borderWidth: 1,
+                        borderColor: '#fff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'bottom'
+                        },
+                        title: {
+                            display: true,
+                            text: 'Log Types Distribution'
+                        }
+                    }
+                }
+            });
+        } else {
+            document.querySelector('.chart-container').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
